@@ -1,0 +1,162 @@
+/* About Page */
+
+.section-a{
+    display: grid;
+    grid-template-areas: 
+    'show-image-a show-caption-a';
+}
+
+/* Show Image A */
+
+.show-image-a{
+    grid-area: show-image-a;
+    padding: 3rem;
+}
+
+.show-image-a img{
+    width: 100%;
+    box-shadow: var(--shadow);
+    transition: transform .2s; 
+}
+
+.show-caption-a{
+    padding: 3rem;
+    margin: 0;
+}
+
+.show-caption-a h1{
+    font-size: 2.5rem;
+}
+.show-caption-a p{
+    font-size: 1.5rem;
+}
+
+.show-image-a img:hover{
+    transform: scale(1.2);
+}
+
+/* Show Image B */
+
+.section-b{
+    display: grid;
+    grid-template-areas: 
+    'show-caption-b show-image-b';
+}
+
+.show-image-b{
+    grid-area: show-image-b;
+    padding: 3rem;
+}
+
+.show-image-b img{
+    width: 100%;
+    box-shadow: var(--shadow);
+    transition: transform .2s; 
+}
+
+.show-caption-b{
+    padding: 3rem;
+    margin: 0;
+}
+
+.show-caption-b h1{
+    font-size: 2.5rem;
+}
+.show-caption-b p{
+    font-size: 1.5rem;
+}
+
+.show-image-b img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:1024px){
+    /* Section A */
+    .section-a{
+        grid-template-areas: 
+        'show-image-a '
+        'show-caption-a';
+    }
+
+    .show-image-a{
+        padding: 3rem;
+    }
+
+    .show-caption-a{
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    .show-caption-a h1{
+        margin: 0.5rem;
+    }
+
+    .show-image-a img:hover{
+        transform: scale(1.1);
+    }
+    
+    /* Section B */
+    .section-b{
+        grid-template-areas: 
+        'show-image-b'
+        'show-caption-b';
+    }
+
+    .show-image-b{
+        padding: 3rem;
+    }
+
+    .show-image-b img:hover{
+        transform: scale(1.1);
+    }
+
+    .show-caption-b{
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    .show-caption-b h1{
+        margin: 0.5rem;
+    }
+}
+
+@media(max-width:700px){
+    /* Section A */
+    .section-a{
+        grid-template-areas: 
+        'show-image-a '
+        'show-caption-a';
+    }
+
+    .show-image-a{
+        padding: 2rem;
+    }
+
+    .show-caption-a{
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    .show-caption-a h1{
+        margin: 0.5rem;
+    }
+    /* Section B */
+    .section-b{
+        grid-template-areas: 
+        'show-image-b'
+        'show-caption-b';
+    }
+
+    .show-image-b{
+        padding: 2rem;
+    }
+
+    .show-caption-b{
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    .show-caption-b h1{
+        margin: 0.5rem;
+    }
+}
